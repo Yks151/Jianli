@@ -1,0 +1,1127 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游科顺博士 - 学术简历</title>
+    <style>
+        /* 优化后的样式表 */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --background: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 3rem;
+            background: white;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        /* 头部信息 */
+        .header {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 2rem;
+            align-items: center;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+            object-fit: cover;
+        }
+
+        .header-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        /* 教育背景 */
+        .timeline-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+            .timeline-table th {
+                background: var(--accent-color);
+                color: white;
+                padding: 1rem;
+                text-align: left;
+            }
+
+        /* 科研成果增强样式 */
+        .publication-item {
+            position: relative;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+            .publication-item:hover {
+                transform: translateX(10px);
+            }
+
+        .doi-link {
+            display: inline-block;
+            margin-top: 0.8rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+            .doi-link::after {
+                content: " ↗";
+                font-size: 0.8em;
+            }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .header {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-photo {
+                margin: 0 auto;
+            }
+        }
+
+        @media print {
+            .container {
+                box-shadow: none;
+            }
+
+            .publication-item {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部信息 -->
+        <header class="header">
+            <img src="3m证件照.png" alt="游科顺博士照片" class="profile-photo">
+            <div class="header-info">
+                <h1 style="font-size:2.4rem;color:var(--primary-color)">游科顺 博士</h1>
+                <div class="contact-bar">
+                    <div>📞 13097326087</div>
+                    <div>📧 yks2986534427@163.com</div>
+                    <div>🎓 江西理工大学2025届博士</div>
+                    <div>📍 江西抚州</div>
+                </div>
+                <div class="contact-bar">
+                    <div>🎂 1997年4月</div>
+                    <div>🚩 中共党员</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 教育背景 -->
+        <style>
+            /* 新增样式 */
+            .research-highlight {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+
+            .research-card {
+                padding: 1.5rem;
+                background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+                border-radius: 10px;
+                border-left: 4px solid #3498db;
+                position: relative;
+                transition: transform 0.3s;
+            }
+
+                .research-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+                }
+
+            .research-icon {
+                font-size: 2rem;
+                color: #3498db;
+                margin-bottom: 1rem;
+            }
+
+            .academic-badge {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background: #e74c3c;
+                color: white;
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+        </style>
+
+        <section class="section">
+            <h2 class="section-title">🎓 教育背景</h2>
+            <table class="info-table">
+                <tr>
+                    <th>📅 时间</th>
+                    <th>🏛️ 院校</th>
+                    <th>🎖️ 学位</th>
+                    <th>📚 专业/方向</th>
+                </tr>
+                <tr>
+                    <td>2019.09-2022.07</td>
+                    <td>江西理工大学</td>
+                    <td>学术型硕士</td>
+                    <td>机械工程</td>
+                </tr>
+                <tr>
+                    <td>2022.09-至今</td>
+                    <td>江西理工大学</td>
+                    <td>工学博士</td>
+                    <td>冶金工程（数智化机械装备健康管理）</td>
+                </tr>
+            </table>
+
+            <div class="research-highlight">
+                <!-- 主攻方向 -->
+                <div class="research-card">
+                    <div class="academic-badge">核心方向</div>
+                    <div class="research-icon">🔬</div>
+                    <h3>主攻研究方向</h3>
+                    <p>基于数智化赋能的矿冶装备智能运维和服役可靠性技术研究</p>
+                    <ul class="tech-tags">
+                        <li>🏷️ 智能运维系统</li>
+                        <li>🏷️ 数字孪生技术</li>
+                        <li>🏷️ 故障预测与健康管理</li>
+                        <li>🏷️ 机器视觉缺陷检测</li>
+                        <li>🏷️ 物理信息深度学习建模</li>
+                    </ul>
+                </div>
+
+                <!-- 学术兼职 -->
+                <div class="research-card">
+                    <div class="academic-badge">学术服务</div>
+                    <div class="research-icon">📝</div>
+                    <h3>学术兼职</h3>
+                    <p>国际期刊审稿人：</p>
+                    <ul class="journal-list">
+                        <li>✅ IEEE Transactions on Industrial Informatics</li>
+                        <li>✅ Reliability Engineering & System Safety</li>
+                        <li>✅ Mechanical Systems and Signal Processing</li>
+                        <li>✅ 等10+个权威期刊</li>
+                    </ul>
+                    <p>🏅 2023 IOP Trusted Reviewer（前15%）</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 科研项目 -->
+        <style>
+            /* 新增科研项目样式 */
+            .project-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 2rem;
+                margin-top: 1.5rem;
+            }
+
+            .project-card {
+                padding: 1.5rem;
+                background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+                border-radius: 12px;
+                border-left: 4px solid #3498db;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                overflow: hidden;
+            }
+
+                .project-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 12px 24px rgba(52, 152, 219, 0.15);
+                }
+
+            .project-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+            }
+
+            .project-type {
+                font-size: 0.9rem;
+                padding: 4px 12px;
+                border-radius: 20px;
+                background: #e3f2fd;
+                color: #3498db;
+            }
+
+            .project-meta {
+                display: flex;
+                gap: 1rem;
+                margin: 1rem 0;
+                flex-wrap: wrap;
+            }
+
+            .meta-item {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 6px 12px;
+                background: #f3f4f6;
+                border-radius: 6px;
+            }
+
+            .tech-stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+
+            .tech-tag {
+                padding: 4px 12px;
+                background: #3498db15;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                color: #3498db;
+                border: 1px solid #3498db30;
+            }
+
+            /* 项目类型颜色区分 */
+            [data-type="national"] {
+                border-left-color: #e74c3c;
+            }
+
+            [data-type="provincial"] {
+                border-left-color: #2ecc71;
+            }
+
+            [data-type="horizontal"] {
+                border-left-color: #f1c40f;
+            }
+
+            [data-type="fund"] {
+                border-left-color: #9b59b6;
+            }
+        </style>
+
+        <section class="section">
+            <h2 class="section-title">🔬 科研项目</h2>
+            <div class="project-grid">
+                <!-- 国家级项目 -->
+                <div class="project-card" data-type="national">
+                    <div class="project-header">
+                        <h3>国家自然科学基金（52164019，52165012）</h3>
+                        <span class="project-type">国家级项目</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span>📅 2020.06-至今</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>👨💻 科研骨干</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>🏷️ 离散状态可靠性</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">智能运维系统</span>
+                        <span class="tech-tag">数字孪生</span>
+                        <span class="tech-tag">可靠性建模</span>
+                    </div>
+                </div>
+
+                <!-- 横向课题 -->
+                <div class="project-card" data-type="horizontal">
+                    <div class="project-header">
+                        <h3>《160m²自动高效压滤机开发》《高压辊磨机关键部件智能监测及其安全性能评估》</h3>
+                        <span class="project-type">横向课题</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span>📅 2020.06-2022.07</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>💰 300万元</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>🏆 学生排名第一</span>
+                        </div>
+                    </div>
+                    <ul class="project-details">
+                        <li>🔌 电气与机械结构设计</li>
+                        <li>🛠️ 工业现场组装调试</li>
+                        <li>📊 算法与软件开发</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">机器视觉</span>
+                        <span class="tech-tag">自动化控制</span>
+                        <span class="tech-tag">SolidWorks</span>
+                    </div>
+                </div>
+
+                <!-- 省级项目 -->
+                <div class="project-card" data-type="provincial">
+                    <div class="project-header">
+                        <h3>江西省自然科学基金（20212ACB20200，20202BAB214017）</h3>
+                        <span class="project-type">省级项目</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span>📅 2021.10-至今</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>👥 科研骨干(排名第一)</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">大数据分析</span>
+                        <span class="tech-tag">深度学习</span>
+                        <span class="tech-tag">工业物联网</span>
+                    </div>
+                </div>
+
+                <!-- 创新基金 -->
+                <div class="project-card" data-type="fund">
+                    <div class="project-header">
+                        <h3>江西省研究生专项创新资金项目</h3>
+                        <span class="project-type">创新基金</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span>📅 2020.06-2022.07</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>🎯 主持人</span>
+                        </div>
+                    </div>
+                    <ul class="project-details">
+                        <li>📈 控制模型优化</li>
+                        <li>⚙️ 设备参数调优</li>
+                        <li>📑 结题报告撰写</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">过程控制</span>
+                        <span class="tech-tag">参数优化</span>
+                        <span class="tech-tag">MATLAB</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 科研成果（示例论文条目） -->
+        <section class="section">
+            <h2 class="section-title">📚 论文成果分类展示</h2>
+
+            <!-- 中科院一区 -->
+            <div class="category-panel active">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>SCI/中科院一区论文（TOP期刊）</h3>
+                    <span class="category-count">3篇</span>
+                </div>
+                <div class="category-content">
+                    <!-- 论文1 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge esi-badge">ESI Top 1%高被引</span>
+                            <span class="badge if-badge">IF:10.6</span>
+                            <span class="badge zone-badge">中科院一区/JCR Q1</span>
+                        </div>
+                        <h3>Toward Efficient and Interpretative Rolling Bearing Fault Diagnosis via Quadratic Neural Network With Bi-LSTM</h3>
+                        <p class="journal-info">
+                            <span>📖 IEEE Internet of Things Journal</span>
+                            <span>📅 2024</span>
+                        </p>
+                        <a href="https://doi.org/10.1109/JIOT.2024.3377731" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文2 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge if-badge">IF:9.4</span>
+                            <span class="badge zone-badge">中科院一区/JCR Q1</span>
+                        </div>
+                        <h3>Optimizing prior distribution parameters for probabilistic prediction of remaining useful life using deep learning</h3>
+                        <p class="journal-info">
+                            <span>📖 Reliability Engineering & System Safety</span>
+                            <span>📅 2024</span>
+                        </p>
+                        <a href="https://doi.org/10.1016/j.ress.2023.109793" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文3 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院一区 Top</span>
+                            <span class="badge if-badge">IF:9.4</span>
+                        </div>
+                        <h3>A sound-vibrational physical-information fusion constraint-guided deep learning method for rolling bearing fault diagnosis</h3>
+                        <p class="journal-info">
+                            <span>📖 Reliability Engineering & System Safety</span>
+                            <span>📅 2025</span>
+                        </p>
+                        <a href="https://doi.org/10.1016/j.ress.2024.110556" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中科院二区 -->
+            <div class="category-panel">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>SCI/中科院二区论文（TOP期刊）</h3>
+                    <span class="category-count">6篇</span>
+                </div>
+                <div class="category-content">
+                    <!-- 论文4 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院二区 Top</span>
+                            <span class="badge if-badge">IF:5.2</span>
+                        </div>
+                        <h3>A performance-interpretable intelligent fusion of sound and vibration signals for bearing fault diagnosis via dynamic CAME</h3>
+                        <p class="journal-info">
+                            <span>📖 Nonlinear Dyn</span>
+                            <span>📅 2024</span>
+                        </p>
+                        <a href="https://doi.org/10.1080/10589759.2024.2425813" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文5 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge esi-badge">ESI Top 1%高被引</span>
+                            <span class="badge zone-badge">中科院二区 Top</span>
+                            <span class="badge if-badge">IF:4.9</span>
+                        </div>
+                        <h3>Research on intelligent implementation of the beneficiation process of shaking table</h3>
+                        <p class="journal-info">
+                            <span>📖 Minerals Engineering</span>
+                            <span>📅 2023</span>
+                        </p>
+                        <a href="https://doi.org/10.1016/j.mineng.2023.108108" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文6 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge esi-badge">ESI Top 1%高被引</span>
+                            <span class="badge zone-badge">中科院二区 Top</span>
+                            <span class="badge if-badge">IF:4.3</span>
+                        </div>
+                        <h3>A 3-D Attention-Enhanced Hybrid Neural Network for Turbofan Engine Remaining Life Prediction Using CNN and BiLSTM Models</h3>
+                        <p class="journal-info">
+                            <span>📖 IEEE Sensors Journal</span>
+                            <span>📅 2024</span>
+                        </p>
+                        <a href="https://doi.org/10.1109/JSEN.2023.3296670" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文10 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院二区</span>
+                            <span class="badge if-badge">IF:4.6</span>
+                        </div>
+                        <h3>An adaptive multi-scale point cloud filtering method for feature information retention</h3>
+                        <p class="journal-info">
+                            <span>📖 Optics and Lasers in Engineering</span>
+                            <span>📅 2024</span>
+                        </p>
+                        <a href="https://doi.org/10.1016/j.optlaseng.2024.108144" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文11 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院二区</span>
+                            <span class="badge if-badge">IF:4.6</span>
+                        </div>
+                        <h3>Research on optimization of control parameters of gravity shaking table</h3>
+                        <p class="journal-info">
+                            <span>📖 Scientific Reports</span>
+                            <span>📅 2023</span>
+                        </p>
+                        <a href="https://www.nature.com/articles/s41598-023-28171-5" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文13 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院二区</span>
+                            <span class="badge if-badge">IF:4.6</span>
+                        </div>
+                        <h3>Optimization of dewatering process of concentrate pressure filtering by support vector regression</h3>
+                        <p class="journal-info">
+                            <span>📖 Scientific Reports</span>
+                            <span>📅 2022</span>
+                        </p>
+                        <a href="https://www.nature.com/articles/s41598-022-11259-9" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中科院三区 -->
+            <div class="category-panel">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>SCI/中科院三区论文</h3>
+                    <span class="category-count">6篇</span>
+                </div>
+                <div class="category-content">
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge esi-badge">ESI Top 0.1%热点</span>
+                            <span class="badge zone-badge">中科院三区</span>
+                            <span class="badge if-badge">IF:2.9</span>
+                        </div>
+                        <h3>Remaining useful life prediction of lithium-ion batteries using EM-PF-SSA-SVR with gamma stochastic process</h3>
+                        <p class="journal-info">
+                            <span>📖 Measurement Science and Technology</span>
+                            <span>📅 2023</span>
+                        </p>
+                        <a href="https://iopscience.iop.org/article/10.1088/1361-6501/acfbef/meta" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">SCI/中科院二区</span>
+                            <span class="badge if-badge">IF:3.0</span>
+                        </div>
+                        <h3>A Novel Rolling Bearing Fault Diagnosis Method Based on Time-Series Fusion Transformer with Interpretability Analysis</h3>
+                        <p class="journal-info">
+                            <span>📖 Nondestructive Testing and Evaluation</span>
+                            <span>📅 2024</span>
+                        </p>
+                        <a href="https://doi.org/10.1080/10589759.2024.2425813" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文9 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge esi-badge">ESI Top 1%高被引</span>
+                            <span class="badge zone-badge">中科院三区</span>
+                            <span class="badge if-badge">IF:2.9</span>
+                        </div>
+                        <h3>Feature detection of mineral zoning in spiral slope flow under complex conditions based on improved yolov5 algorithm</h3>
+                        <p class="journal-info">
+                            <span>📖 Physica Scripta</span>
+                            <span>📅 2023</span>
+                        </p>
+                        <a href="https://iopscience.iop.org/article/10.1088/1402-4896/ad0f7d/meta" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文12 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院三区</span>
+                            <span class="badge if-badge">IF:2.9</span>
+                        </div>
+                        <h3>An efficient lightweight neural network using BiLSTM-SCN-CBAM with PCA-ICEEMDAN for diagnosing rolling bearing faults</h3>
+                        <p class="journal-info">
+                            <span>📖 Measurement Science and Technology</span>
+                            <span>📅 2023</span>
+                        </p>
+                        <a href="https://iopscience.iop.org/article/10.1088/1361-6501/acd5ef/meta" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文14 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院三区</span>
+                            <span class="badge if-badge">IF:3.9</span>
+                        </div>
+                        <h3>Rolling bearing fault diagnosis using hybrid neural network with principal component analysis</h3>
+                        <p class="journal-info">
+                            <span>📖 Sensors</span>
+                            <span>📅 2022</span>
+                        </p>
+                        <a href="https://doi.org/10.3390/s22228906" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文15 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院三区</span>
+                            <span class="badge if-badge">IF:3.9</span>
+                        </div>
+                        <h3>Intelligent deployment solution for tabling adapting deep learning</h3>
+                        <p class="journal-info">
+                            <span>📖 IEEE Access</span>
+                            <span>📅 2023</span>
+                        </p>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10005307" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中科院四区 -->
+            <div class="category-panel">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>SCI/中科院四区论文</h3>
+                    <span class="category-count">1篇</span>
+                </div>
+                <div class="category-content">
+                    <!-- 论文16 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院四区</span>
+                            <span class="badge if-badge">IF:5.0</span>
+                        </div>
+                        <h3>An end-end arrhythmia diagnosis model based on deep learning neural network with multi-scale feature extraction</h3>
+                        <p class="journal-info">
+                            <span>📖 Physical and Engineering Sciences in Medicine</span>
+                            <span>📅 2023</span>
+                        </p>
+                        <a href="https://doi.org/10.1007/s13246-023-01286-9" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EI检索 -->
+            <div class="category-panel">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>EI检索成果</h3>
+                    <span class="category-count">2篇</span>
+                </div>
+                <div class="category-content">
+                    <!-- 论文17 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge">EI 检索</span>
+                        </div>
+                        <h3>Multi-feature Extraction of Mineral Zone of Tabling Through Deep Semantic Segmentation</h3>
+                        <p class="journal-info">
+                            <span>📖 Springer 专著章节</span>
+                            <span>📅 2023</span>
+                        </p>
+                        <a href="https://doi.org/10.1007/978-981-99-1230-8_5" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                    <!-- 论文18 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge">EI 检索</span>
+                        </div>
+                        <h3>Research on image multi-feature extraction of ore belt and real-time monitoring of the tabling by semantic segmentation of DeepLab V3+</h3>
+                        <p class="journal-info">
+                            <span>📖 Springer 会议论文</span>
+                            <span>📅 2022</span>
+                        </p>
+                        <a href="https://doi.org/10.1007/978-3-031-06767-9_3" class="doi-link" target="_blank">查看全文 →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 中文核心 -->
+            <div class="category-panel">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>中文核心期刊</h3>
+                    <span class="category-count">3篇</span>
+                </div>
+                <div class="category-content">
+                    <!-- 论文19 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge">CSCD 核心</span>
+                        </div>
+                        <h3>基于深度学习边缘检测和Hough变换的摇床矿物带边界提取和特征表示</h3>
+                        <p class="journal-info">
+                            <span>📖 制造业自动化</span>
+                            <span>📅 2023</span>
+                        </p>
+                    </div>
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge">中文核心</span>
+                        </div>
+                        <h3>基于熵权法改进的TOPSIS法和灰色关联度分析的压榨脱水过程优化研究</h3>
+                        <p class="journal-info">
+                            <span>📖 选煤技术</span>
+                            <span>📅 2022</span>
+                        </p>
+                    </div>
+
+                    <!-- 论文21 -->
+                    <div class="publication-item">
+                        <div class="badge-container">
+                            <span class="badge">中文核心</span>
+                        </div>
+                        <h3>基于麻雀搜索算法优化的物料加压过滤过程模型改进</h3>
+                        <p class="journal-info">
+                            <span>📖 选煤技术</span>
+                            <span>📅 2021</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 在投论文 -->
+            <div class="category-panel">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <h3>在审/录用论文</h3>
+                    <span class="category-count">3篇</span>
+                </div>
+                <div class="category-content">
+                    <!-- 在投1 -->
+                    <div class="publication-item in-review">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院一区 Top</span>
+                            <span class="badge if-badge">IF:7.5</span>
+                        </div>
+                        <h3>DTMPI-DIVR: A Digital Twins for Multi-margin Physical Information via Dynamic Interaction of Virtual and Real Sound-vibration Signals for Bearing Fault Diagnosis without Real Fault Samples</h3>
+                        <p class="journal-info">
+                            <span>📝 Expert Systems With Applications</span>
+                            <span>🕒 Accept</span>
+                        </p>
+                    </div>
+
+                    <!-- 在投2 -->
+                    <div class="publication-item in-review">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院二区</span>
+                            <span class="badge if-badge">IF:5.2</span>
+                        </div>
+                        <h3>A Multi-scale Convolution and MMamba Model with Multimodal Features Fusion for Rotating Machinery Fault Diagnosis under Unbalance Samples</h3>
+                        <p class="journal-info">
+                            <span>📝 IEEE Transactions on Automation Science and Engineering</span>
+                            <span>🕒 审稿中</span>
+                        </p>
+                    </div>
+
+                    <!-- 在投3 -->
+                    <div class="publication-item in-review">
+                        <div class="badge-container">
+                            <span class="badge zone-badge">中科院二区</span>
+                            <span class="badge if-badge">IF:5.2</span>
+                        </div>
+                        <h3>A Novel Interpretable Bearing Fault Diagnosis Method Based on Physical Constraint-Guided Quadratic Neural Networks with Bi-LSTM under Zero Fault Samples</h3>
+                        <p class="journal-info">
+                            <span>📝 IEEE Transactions on Reliability</span>
+                            <span>🕒 审稿中</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+    // 折叠面板交互
+    function toggleCategory(header) {
+        const panel = header.closest('.category-panel');
+        panel.classList.toggle('active');
+
+        // 关闭其他展开的面板（可选）
+        document.querySelectorAll('.category-panel').forEach(p => {
+            if(p !== panel) p.classList.remove('active');
+        });
+    }
+
+    // 默认打开第一个面板
+    document.querySelector('.category-panel').classList.add('active');
+        </script>
+        <!-- 科研成果 -->
+        <style>
+            /* 知识产权样式 */
+            .ip-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            .ip-card {
+                padding: 1.2rem;
+                background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+                border-radius: 8px;
+                border-left: 4px solid #3498db;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+                transition: all 0.3s ease;
+                position: relative;
+            }
+
+                .ip-card:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 8px 15px rgba(52, 152, 219, 0.15);
+                }
+
+            .ip-type {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background: #3498db;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 15px;
+                font-size: 0.8rem;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+
+            .ip-status {
+                display: inline-block;
+                padding: 3px 10px;
+                border-radius: 12px;
+                font-size: 0.8rem;
+                margin-left: 8px;
+            }
+
+            .granted {
+                background: #2ecc71;
+                color: white;
+            }
+
+            .pending {
+                background: #f1c40f;
+                color: white;
+            }
+
+            /* 学术链接增强 */
+            .profile-links {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            .profile-link {
+                padding: 1.2rem;
+                background: #f8f9fa;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                transition: all 0.3s ease;
+            }
+
+                .profile-link:hover {
+                    transform: translateY(-3px);
+                    background: #3498db10;
+                }
+        </style>
+
+        <!-- 知识产权 -->
+        <section class="section">
+            <h2 class="section-title">🔖 知识产权</h2>
+
+            <div class="ip-grid">
+                <!-- 发明专利 -->
+                <div class="ip-card">
+                    <span class="ip-type">⚙️ 发明专利</span>
+                    <h3>基于随机退化过程的锂离子电池RUL预测方法</h3>
+                    <div class="ip-meta">
+                        <span>发明人：游科顺 等</span>
+                        <span class="ip-status granted">已授权</span>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge">CN117630682A</span>
+                    </div>
+                </div>
+
+                <div class="ip-card">
+                    <span class="ip-type">⚙️ 发明专利</span>
+                    <h3>便携式采摘装置</h3>
+                    <div class="ip-meta">
+                        <span>发明人：关开荣, 游科顺</span>
+                        <span class="ip-status granted">已授权</span>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge">CN110214549B</span>
+                        <span class="badge">CN210406247U</span>
+                    </div>
+                </div>
+
+                <div class="ip-card">
+                    <span class="ip-type">🌍 国际专利</span>
+                    <h3>Gravity Concentration System and Chromite Ore Dressing Method</h3>
+                    <div class="ip-meta">
+                        <span>国家：澳大利亚</span>
+                        <span class="ip-status granted">已授权</span>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge">AU2021102528A4</span>
+                    </div>
+                </div>
+
+                <div class="ip-card">
+                    <span class="ip-type">⚙️ 发明专利</span>
+                    <h3>基于虚拟与现实动态交互的数字孪生轴承故障诊断方法</h3>
+                    <div class="ip-meta">
+                        <span class="ip-status pending">受理中</span>
+                    </div>
+                </div>
+
+                <!-- 软件著作权 -->
+                <div class="ip-card">
+                    <span class="ip-type">💻 软件著作权</span>
+                    <h3>汽车锂电池RUL在线评估系统V1.0</h3>
+                    <div class="badge-container">
+                        <span class="badge">2023SR0865002</span>
+                    </div>
+                </div>
+
+                <div class="ip-card">
+                    <span class="ip-type">💻 软件著作权</span>
+                    <h3>涡扇发动机可靠性在线评估系统 V1.0</h3>
+                    <div class="badge-container">
+                        <span class="badge">2023SR0865237</span>
+                    </div>
+                </div>
+                <!-- 软著3 -->
+                <div class="ip-card">
+                    <span class="ip-type">💻 软件著作权</span>
+                    <h3>端到端滚动轴承故障智能诊断系统 V1.0</h3>
+                    <div class="badge-container">
+                        <span class="badge">2023SR0865003</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">故障诊断</span>
+                        <span class="tech-tag">深度学习</span>
+                    </div>
+                </div>
+
+                <!-- 软著4 -->
+                <div class="ip-card">
+                    <span class="ip-type">💻 软件著作权</span>
+                    <h3>选矿摇床分选过程实时监测系统 V1.0</h3>
+                    <div class="badge-container">
+                        <span class="badge">2021SR1218595</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">过程控制</span>
+                        <span class="tech-tag">实时监测</span>
+                    </div>
+                </div>
+
+                <!-- 软著5 -->
+                <div class="ip-card">
+                    <span class="ip-type">💻 软件著作权</span>
+                    <h3>可解释智能故障诊断系统 V1.0</h3>
+                    <div class="badge-container">
+                        <span class="badge">2024SR0794502</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">可解释AI</span>
+                        <span class="tech-tag">信号融合</span>
+                    </div>
+                </div>
+
+                <!-- 软著6 -->
+                <div class="ip-card">
+                    <span class="ip-type">💻 软件著作权</span>
+                    <h3>旋转机械轴承故障仿真系统 V1.0</h3>
+                    <div class="badge-container">
+                        <span class="badge">2024SR1120827</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">故障仿真</span>
+                        <span class="tech-tag">信号分析</span>
+                    </div>
+                </div>
+
+                <!-- 软著7 -->
+                <div class="ip-card">
+                    <span class="ip-type">💻 软件著作权</span>
+                    <h3>旋转机械故障预警系统 V1.0</h3>
+                    <div class="badge-container">
+                        <span class="badge">2025SR0239541</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">故障预警</span>
+                        <span class="tech-tag">多元信号</span>
+                    </div>
+                </div>
+
+                <!-- 软著8 -->
+                <div class="ip-card">
+                    <span class="ip-type">💻 软件著作权</span>
+                    <h3>冶金设备数字监测平台 V1.0</h3>
+                    <div class="badge-container">
+                        <span class="badge">2025SR0254066</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">数字孪生</span>
+                        <span class="tech-tag">设备管理</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- 学术链接 -->
+        <section class="section">
+            <h2 class="section-title">🌐 学术档案</h2>
+            <div class="profile-links">
+                <a href="https://scholar.google.com/citations?user=sybCxY0AAAAJ"
+                   class="profile-link"
+                   target="_blank">
+                    <span style="font-size:1.5rem">🎓</span>
+                    <div>
+                        <h3>Google Scholar</h3>
+                        <p>H指数14 · 引用500+</p>
+                    </div>
+                </a>
+
+                <a href="https://orcid.org/0000-0001-5603-3707"
+                   class="profile-link"
+                   target="_blank">
+                    <span style="font-size:1.5rem">📚</span>
+                    <div>
+                        <h3>ORCID</h3>
+                        <p>学术身份认证</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Yks151"
+                   class="profile-link"
+                   target="_blank">
+                    <span style="font-size:1.5rem">🐱</span>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>开源项目仓库</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
